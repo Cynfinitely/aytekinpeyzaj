@@ -1,14 +1,10 @@
-import styles from '../styles/Footer.module.scss'
+import styles from "../styles/Footer.module.scss";
 
-export default function Footer(){
-    return (
-        <footer className={styles.footer}>
-            <p>
-                Next.js app with a&nbsp;<a href="https://snipcart.com">Snipcart</a>&nbsp;- powered store
-            </p>
-            <div className={styles.footer__left}>
-                <a href="https://github.com/snipcart/snipcart-nextjs">Github</a>
-            </div>
-        </footer>
-    )
+export default function Footer() {
+  return (
+    <footer className={styles.footer}>
+      <p>© 2024 Aytekin Peyzaj</p>
+      <p>İletişim: +90 551 849 45 24 , +90 539 339 63 04 </p>
+    </footer>
+  );
 }

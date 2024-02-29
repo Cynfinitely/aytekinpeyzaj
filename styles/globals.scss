@@ -14,28 +14,26 @@ body {
 }
 
 .app {
+  height: 100vh;
   min-height: 100vh;
-  min-width: 100vh;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+header {
+  height: 20%;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  height: 15%;
 }
 
 .product-list {
   @include mixins.centered;
-}
-
-.background-image {
-  position: absolute;
-  opacity: 0.02;
-  left: -10vw;
-  top: -10vh;
-  height: 75vh;
-  transform: rotate(20deg);
-  pointer-events: none;
-}
-
-
-.product__price-button-container {
-  display: flex;
-  grid-area: button;
 }

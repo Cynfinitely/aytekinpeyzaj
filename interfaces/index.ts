@@ -14,7 +14,7 @@ export type User = {
 export interface IProduct {
   id: string;
   name: string;
-  liter: number;
+  liter: number[];
   url: string;
   description: string;
   image: StaticImageData;

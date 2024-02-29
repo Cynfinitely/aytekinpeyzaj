@@ -1,7 +1,7 @@
 @use "mixins";
 
 .banners {
-  background-color: #7daf4a;
+  background-color: mixins.$color-third;
   padding: 15px;
   &__container {
     width: 100%;

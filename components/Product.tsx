@@ -19,8 +19,10 @@ const Product = (props: IProductProps) => {
           height={500}
         />
       </div>
-      <div className="product__liter-button-container">
-        <div className={styles.product__liter}>{props.product.liter}L</div>
+      <div className={styles.product__liter_buttonContainer}>
+        <div className={styles.product__liter}>
+          {props.product.liter.join("L / ")}L
+        </div>
       </div>
     </div>
   );

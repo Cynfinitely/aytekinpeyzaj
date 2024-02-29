@@ -75,8 +75,9 @@
     }
   }
 
-  &__liter-button-container {
+  &__liter_buttonContainer {
     display: flex;
+    gap: 5px;
     grid-area: button;
   }
 
