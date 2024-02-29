@@ -8,11 +8,9 @@ const Jumbotron = () => {
         <Image src={ladybug} alt={ladybug} />
       </div>
       <div className="promotional-message">
-        <h3>REDISCOVER</h3>
         <h2>Aytekin Peyzaj</h2>
         <p>
-          An <strong>exclusive collection of bettas</strong> available for
-          everyone.
+          Toprağa hayat,<strong>hayata değer</strong> katar.
         </p>
       </div>
     </>

@@ -1,10 +1,12 @@
-@use 'mixins';
+@use "mixins";
 
 .header {
-  @include mixins.centered;
+  width: 100%;
   display: flex;
+  justify-content: space-evenly;
   padding-top: 20px;
   padding-bottom: 20px;
+  background-color: mixins.$color-light-grey;
 
   a {
     font-weight: bold;

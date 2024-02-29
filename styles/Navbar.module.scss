@@ -1,0 +1,21 @@
+@use "mixins";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.navbar__link {
+  margin-right: 1em;
+  text-decoration: none;
+  color: #333;
+}
+
+.navbar__search {
+  display: flex;
+}
+
+.navbar__searchInput {
+  margin-right: 1em;
+}
