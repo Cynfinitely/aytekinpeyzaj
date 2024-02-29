@@ -1,0 +1,14 @@
+@use "mixins";
+
+.banners {
+  background-color: #7daf4a;
+  padding: 15px;
+  &__container {
+    width: 100%;
+  }
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}

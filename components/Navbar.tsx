@@ -23,7 +23,7 @@ const Navbar = () => {
       <Link href="/about" className={styles.navbar__link}>
         Hakkımızda
       </Link>
-      <Link href="/products" className={styles.navbar__link}>
+      <Link href="/productsPage" className={styles.navbar__link}>
         Ürünler
       </Link>
       <Link href="/contact" className={styles.navbar__link}>

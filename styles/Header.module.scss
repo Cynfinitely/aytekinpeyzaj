@@ -6,7 +6,8 @@
   justify-content: space-evenly;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: mixins.$color-light-grey;
+  background-color: mixins.$color-primary;
+  color: mixins.$color-fourth;
 
   a {
     font-weight: bold;
@@ -17,7 +18,6 @@
   }
 
   a > span {
-    color: mixins.$color-purple;
     margin-left: 10px;
   }
 

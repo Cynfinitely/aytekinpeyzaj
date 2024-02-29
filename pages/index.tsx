@@ -1,12 +1,9 @@
-import ProductList from "../components/ProductList";
 import Contact from "../components/Contact";
 import Head from "next/head";
-import { GetStaticProps } from "next";
 import Jumbotron from "../components/Jumbotron";
-import { products } from "../data/products";
-import { IProductListProps } from "../interfaces";
+import InfoBanner from "../components/InfoBanner";
 
-export default function Home({ products }: IProductListProps) {
+export default function Home() {
   return (
     <>
       <Head>
@@ -15,23 +12,9 @@ export default function Home({ products }: IProductListProps) {
       </Head>
       <main className="main">
         <Jumbotron />
-        <ProductList products={products} />
+        <InfoBanner />
         <Contact />
       </main>
-      <div
-        hidden
-        id="snipcart"
-        data-api-key="OWNlZTNlYmItZTU5OS00MmI4LThjOTAtMjY0NzAyYmI2ODAxNjM3NjIyMjY3MDMxMTIzMzUx
-"
-      ></div>
     </>
   );
 }
-
-export const getStaticProps: GetStaticProps = async (context) => {
-  return {
-    props: {
-      products,
-    },
-  };
-};
