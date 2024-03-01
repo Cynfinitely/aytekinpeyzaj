@@ -1,0 +1,27 @@
+@use "mixins";
+
+.productList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.productContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1.5%;
+}
+
+.productItem {
+  flex: 1 0 21%; // For 4 items per row. Adjust as needed.
+  margin: 1.5%; // Adjust as needed.
+  img {
+    width: 250px;
+    height: auto;
+  }
+}
