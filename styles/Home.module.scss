@@ -12,7 +12,7 @@
 }
 
 .scallopDown {
-  height: 100px;
+  height: 50px;
   width: 100%;
   background: -webkit-gradient(
     radial,
@@ -20,17 +20,17 @@
     10,
     50% 0,
     40,
-    from(#369a7e),
-    color-stop(0.49, #369a7e),
-    color-stop(0.51, #fff),
-    to(white)
+    from(white),
+    color-stop(0.49, white),
+    color-stop(0.51, #369a7e),
+    to(#369a7e)
   );
   -webkit-background-size: 49px 100%;
   background-size: 49px 100%;
 }
 
 .scallopUp {
-  height: 100px;
+  height: 50px;
   width: 100%;
   background: -webkit-gradient(
     radial,
@@ -38,10 +38,10 @@
     10,
     50% 100%,
     40,
-    from(#369a7e),
-    color-stop(0.49, #369a7e),
-    color-stop(0.51, #fff),
-    to(white)
+    from(white),
+    color-stop(0.49, white),
+    color-stop(0.51, #369a7e),
+    to(#369a7e)
   );
   -webkit-background-size: 49px 100%;
   background-size: 49px 100%;
