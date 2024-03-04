@@ -5,7 +5,7 @@ import Carousel from "./Carousel";
 const Jumbotron = () => {
   return (
     <>
-      <Carousel items={flyers}/>
+      <Carousel items={flyers} />
       <div className={styles.promotional}>
         <em>
           <h3>

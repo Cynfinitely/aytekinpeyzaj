@@ -4,18 +4,18 @@
   display: flex;
   justify-content: space-between;
   padding: 1em;
+  flex-wrap: wrap; // Allow the items to wrap onto multiple lines
 }
 
 .navbar__link {
   margin-right: 1em;
   text-decoration: none;
   color: #333;
+  flex: 1 0 auto; // Make the items take up the available space
 }
 
-.navbar__search {
-  display: flex;
-}
-
-.navbar__searchInput {
-  margin-right: 1em;
+@media (max-width: 600px) {
+  .navbar__link {
+    margin-bottom: 1em; // Add some bottom margin on mobile
+  }
 }
