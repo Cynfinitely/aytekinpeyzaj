@@ -1,13 +1,16 @@
+import { flyers } from "../data/carousel";
 import styles from "../styles/Jumbotron.module.scss";
 import Carousel from "./Carousel";
 
 const Jumbotron = () => {
   return (
     <>
-      <Carousel />
+      <Carousel items={flyers}/>
       <div className={styles.promotional}>
         <em>
-          Toprağa hayat,<strong>hayata değer</strong> katar.
+          <h3>
+            Toprağa hayat,<strong>hayata değer</strong> katar.
+          </h3>
         </em>
       </div>
     </>

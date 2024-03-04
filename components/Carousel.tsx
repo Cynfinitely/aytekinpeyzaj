@@ -1,9 +1,9 @@
 import { useState } from "react";
 import Image from "next/image";
 import styles from "../styles/Carousel.module.scss";
+import { CarouselProps } from "../interfaces";
 
-const Carousel = () => {
-  const items = ["/organikGübre.png", "/ozelTopraklar.png", "/enUrunler.png"];
+const Carousel: React.FC<CarouselProps> = ({ items }) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const handleNext = () => {
