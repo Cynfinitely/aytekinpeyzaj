@@ -8,7 +8,7 @@ const ProductShowcase = () => {
     <div className={styles.productList}>
       <h1>Ürünlerimiz</h1>
       <div className={styles.productContainer}>
-        <Carousel items={carouselProducts} />
+        <Carousel items={carouselProducts} itemsShown={3} />
       </div>
     </div>
   );

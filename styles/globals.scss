@@ -22,17 +22,13 @@ body {
   justify-content: flex-start;
 }
 
-header {
-  height: 10%;
-}
+
 
 main {
   flex: 1;
 }
 
-footer {
-  height: 5%;
-}
+
 
 .product-list {
   @include mixins.centered;

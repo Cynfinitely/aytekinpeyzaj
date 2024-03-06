@@ -11,13 +11,4 @@
     text-transform: uppercase;
     margin: 0;
   }
-
-  h2 {
-    font-size: 100px;
-    @include mixins.mobile {
-      font-size: 50px;
-    }
-    margin: 0;
-    color: red;
-  }
 }
