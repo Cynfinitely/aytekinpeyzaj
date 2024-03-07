@@ -8,7 +8,10 @@
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: mixins.$color-primary;
-  color: mixins.$color-fourth;
+  color: white;
+  background-image: url("/vectorGrass.png");
+  background-repeat: repeat-x;
+  background-position: bottom;
 
   a {
     font-weight: bold;

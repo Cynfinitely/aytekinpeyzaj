@@ -1,0 +1,34 @@
+@use "mixins";
+
+.blog {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 5em;
+  padding: mixins.$general-padding;
+}
+
+.blog__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.blog__image {
+  width: 100%;
+  height: auto;
+  border-radius: 5%;
+}
+
+.blog__title {
+  margin: 0.5em 0;
+}
+
+.blog__description {
+  margin: 0.5em 0;
+  flex: 1;
+}
+
+.blog__link {
+  margin-top: 3em;
+}

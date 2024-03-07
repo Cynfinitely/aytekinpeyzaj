@@ -6,7 +6,9 @@ import Header from "../components/Header";
 function MyApp({Component, pageProps}: AppProps) {
     return <div className="app">
         <Header/>
-        <Component {...pageProps} />
+        <main className="main-content">
+          <Component {...pageProps} />
+        </main>
         <Footer/>
     </div>
 }

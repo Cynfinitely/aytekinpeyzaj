@@ -3,19 +3,54 @@
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 1em;
-  flex-wrap: wrap; // Allow the items to wrap onto multiple lines
+  flex-wrap: wrap;
+}
+
+.navbar__menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  flex-wrap: wrap;
 }
 
 .navbar__link {
   margin-right: 1em;
   text-decoration: none;
-  color: #333;
-  flex: 1 0 auto; // Make the items take up the available space
+  color: white;
+  flex: 1 0 auto;
+}
+
+.navbar__button {
+  display: none;
 }
 
 @media (max-width: 600px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+
   .navbar__link {
-    margin-bottom: 1em; // Add some bottom margin on mobile
+    margin-bottom: 1em;
+  }
+
+  .navbar__menu {
+    display: none;
+  }
+
+  .navbar__button {
+    display: block;
+    img {
+      width: 25px;
+      height: 25px;
+      background-color: transparent;
+    }
+  }
+
+  .navbar__menu.open {
+    display: flex;
+    flex-direction: column;
   }
 }

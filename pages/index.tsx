@@ -6,7 +6,7 @@ import styles from "../styles/Home.module.scss";
 export default function Home() {
   return (
     <>
-      <main className="main">
+      <div>
         <div className={styles.scallopUp}></div>
         <div className={styles.whiteBlock}>
           <Jumbotron />
@@ -16,7 +16,7 @@ export default function Home() {
           <ProductShowcase />
         </div>
         <InfoBanner />
-      </main>
+      </div>
     </>
   );
 }

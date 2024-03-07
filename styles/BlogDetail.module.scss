@@ -1,0 +1,6 @@
+@use "mixins";
+
+.blog {
+  padding: mixins.$general-padding;
+}
+

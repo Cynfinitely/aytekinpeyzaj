@@ -7,6 +7,10 @@ class MyDocument extends Document {
         <Head>
           <title>Aytekin Peyzaj</title>
           <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+          <meta
+            name="description"
+            content="Aytekin Peyzaj, 2020'den beri üretim, işleme, ve pazarlama alanlarında faaliyet göstermektedir. Katı çiftlik gübresi, süper toprak, fidan dikim harcı ve daha birçok ürünle peyzaj, inşaat ve turizm sektörlerine hizmet veriyoruz. Uzman ekibimiz ve teknolojik alt yapımızla, dünya standartlarını yakalayarak müşterilerimize en kaliteli ürünleri sunuyoruz."
+          />
         </Head>
         <body>
           <Main />

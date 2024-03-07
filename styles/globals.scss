@@ -22,13 +22,9 @@ body {
   justify-content: flex-start;
 }
 
-
-
-main {
+.main-content {
   flex: 1;
 }
-
-
 
 .product-list {
   @include mixins.centered;
