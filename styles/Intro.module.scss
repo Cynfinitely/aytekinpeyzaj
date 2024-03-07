@@ -1,0 +1,33 @@
+@use "mixins";
+
+$u: 1.25;
+$d: 14em;
+$p: 0.5em;
+$o: 1.25em;
+$l: 6px;
+
+.introContainer {
+  @media (max-width: 360px) {
+    font-size: 1em;
+  }
+  @media (max-width: 240px) {
+    font-size: 0.75em;
+  }
+  padding: $p;
+  min-height: 50vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  h3 {
+    color: white;
+    font-style: italic;
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 1;
+    text-align: center;
+  }
+}

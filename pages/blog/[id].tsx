@@ -13,15 +13,16 @@ const BlogPost = () => {
 
   return (
     <div className={styles.blog}>
-
       <h2 className={styles.blog__title}>{blog.title}</h2>
       <img
         src={blog.imageUrl}
         alt={blog.title}
         className={styles.blog__image}
       />
-      <p className={styles.blog__description}>{blog.description}</p>
-
+      <div
+        className={styles.blog__text}
+        dangerouslySetInnerHTML={{ __html: blog.text }}
+      />
     </div>
   );
 };

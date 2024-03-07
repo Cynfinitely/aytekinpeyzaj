@@ -1,48 +1,20 @@
 .colourBlock {
-  background: #369a7e;
+  background-image: url("/soil.png");
+  background-repeat: no-repeat;
+  background-position: 25% 50%;
+  background-size: cover;
   width: 100%;
   padding: 1% 5%;
   color: #fff;
 }
 .whiteBlock {
-  background: #fff;
+  background-image: url("/flowersBG.png");
+  background-repeat: no-repeat;
+  background-position: 25% 50%;
+  background-size: cover;
   width: 100%;
-  padding: 3% 5%;
+  padding: 3% 2%;
   color: #369a7e;
+  border: 5px solid black;;
 }
 
-.scallopDown {
-  height: 50px;
-  width: 100%;
-  background: -webkit-gradient(
-    radial,
-    50% 0,
-    10,
-    50% 0,
-    40,
-    from(white),
-    color-stop(0.49, white),
-    color-stop(0.51, #369a7e),
-    to(#369a7e)
-  );
-  -webkit-background-size: 49px 100%;
-  background-size: 49px 100%;
-}
-
-.scallopUp {
-  height: 50px;
-  width: 100%;
-  background: -webkit-gradient(
-    radial,
-    50% 100%,
-    10,
-    50% 100%,
-    40,
-    from(white),
-    color-stop(0.49, white),
-    color-stop(0.51, #369a7e),
-    to(#369a7e)
-  );
-  -webkit-background-size: 49px 100%;
-  background-size: 49px 100%;
-}

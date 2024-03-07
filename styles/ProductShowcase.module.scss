@@ -3,8 +3,18 @@
 .productList {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  text-align: center;
+  justify-content: center;
+  h1{
+    color: rgb(255, 255, 255);
+
+    background: rgba(0, 0, 0, 0.5);
+    font-weight: bolder;
+    font-style: oblique;
+  }
 }
+
+
 
 .productContainer {
   display: flex;
@@ -18,8 +28,8 @@
 }
 
 .productItem {
-  flex: 1 0 21%; // For 4 items per row. Adjust as needed.
-  margin: 1.5%; // Adjust as needed.
+  flex: 1 0 21%; 
+  margin: 1.5%; 
   img {
     width: 250px;
     height: auto;
