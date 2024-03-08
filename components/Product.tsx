@@ -27,7 +27,7 @@ const Product = (props: IProductProps) => {
         </p>
         <p className={styles.product__text__price}>
           {" "}
-          {props.product.liter.join(" TL / ")} TL
+          {props.product.price.join(" TL / ")} TL
         </p>
       </div>
     </div>
