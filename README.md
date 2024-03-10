@@ -26,3 +26,8 @@ Contributions are welcome. Please submit a pull request or create an issue to di
 ## License
 
 This project is licensed under the MIT License. See the `LICENSE` file for more details.
+
+## TODO
+
+- [ ] Update Blogs.
+- [ ] Improve productShowcase
