@@ -31,3 +31,4 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 
 - [ ] Update Blogs.
 - [ ] Improve productShowcase
+- [ ] Improve styling ( add Tailwind or improve SCSS)
