@@ -34,3 +34,4 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 - [ ] Improve styling ( add Tailwind or improve SCSS)
 - [ ] Add tests
 - [ ] Add order system
+- [ ] Code Maintainability rules
