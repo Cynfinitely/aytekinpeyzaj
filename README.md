@@ -35,3 +35,6 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 - [ ] Add tests
 - [ ] Add order system
 - [ ] Code Maintainability rules
+- [ ] Backend prep
+
+
