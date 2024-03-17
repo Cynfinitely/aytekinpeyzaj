@@ -38,3 +38,4 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 - [ ] Backend prep
 - [ ] User System
 - [ ] Semantic & accessibility
+- [ ] payment system
