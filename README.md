@@ -40,3 +40,5 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 - [ ] Semantic & accessibility
 - [ ] Dependency Injection
 - [ ] payment system
+- [ ] Make great components
+- [ ] Styling advancements 
