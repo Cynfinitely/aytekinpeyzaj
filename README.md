@@ -43,3 +43,4 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 - [ ] Make great components
 - [ ] Styling advancements 
 - [ ] iframe videos about gardening
+- [ ] price list integration
