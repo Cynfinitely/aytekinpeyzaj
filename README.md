@@ -45,3 +45,5 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 - [ ] Image Gallery
 - [ ] History Log
 - [ ] Versioning
+- [ ] iframe videos about gardening
+- [ ] price list integration
