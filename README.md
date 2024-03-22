@@ -41,4 +41,7 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 - [ ] Dependency Injection
 - [ ] payment system
 - [ ] Make great components
-- [ ] Styling advancements 
+- [ ] Styling advancements
+- [ ] Image Gallery
+- [ ] History Log
+- [ ] Versioning
