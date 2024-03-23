@@ -47,3 +47,4 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 - [ ] Versioning
 - [ ] iframe videos about gardening
 - [ ] price list integration
+- [ ] Chat robot for customers
