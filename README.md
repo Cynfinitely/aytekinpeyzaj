@@ -49,3 +49,4 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 - [ ] price list integration
 - [ ] Chat robot for customers
 - [ ] SEO works
+- [ ] Blog improvements
