@@ -50,3 +50,4 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 - [ ] Chat robot for customers
 - [ ] SEO works
 - [ ] Blog improvements
+- [ ] Share your thoughts part
