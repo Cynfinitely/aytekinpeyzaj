@@ -52,3 +52,4 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 - [ ] SEO works
 - [ ] Blog improvements
 - [ ] Share your thoughts part
+- [ ] FAQ part
