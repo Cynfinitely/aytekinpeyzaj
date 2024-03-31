@@ -55,3 +55,4 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 - [ ] Blog improvements
 - [ ] Share your thoughts part
 - [ ] FAQ part
+- [ ] API Documentation
