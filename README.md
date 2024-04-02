@@ -57,3 +57,4 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 - [ ] FAQ part
 - [ ] API Documentation
 - [ ] Open source planning
+- [ ] Security
