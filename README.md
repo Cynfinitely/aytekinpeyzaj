@@ -59,3 +59,4 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 - [ ] Open source planning
 - [ ] Security
 - [ ] DevOps
+- [ ] Pipelines
