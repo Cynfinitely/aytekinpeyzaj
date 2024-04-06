@@ -61,3 +61,4 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 - [ ] DevOps
 - [ ] Pipelines
 - [ ] Code Maintenance
+- [ ] Database arrangements
