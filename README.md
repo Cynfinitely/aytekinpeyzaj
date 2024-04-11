@@ -66,3 +66,4 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 - [ ] Cost and business
 - [ ] Advertisements
 - [ ] Blog News connections
+- [ ] Order records and logs
