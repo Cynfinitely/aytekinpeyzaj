@@ -68,3 +68,4 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 - [ ] Blog News connections
 - [ ] Order records and logs
 - [ ] Customer Service
+- [ ] Themes
