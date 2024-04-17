@@ -71,3 +71,4 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 - [ ] Themes
 - [ ] Currency management
 - [ ] Language Support
+- [ ] Payment options
