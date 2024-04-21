@@ -75,4 +75,5 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 - [ ] AI images for supporting website
 - [ ] Order notification system
 - [ ] Phone app
+- [ ] Other domains support
   
