@@ -29,7 +29,7 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 
 ## TODO
 
-- [ ] Update Blogs.
+- [x] Update Blogs.
 - [ ] Improve productShowcase
 - [ ] time and date implementation
 - [ ] order calculations
