@@ -3,6 +3,7 @@ import InfoBanner from "../components/InfoBanner";
 import ProductShowcase from "../components/ProductShowcase";
 import styles from "../styles/Home.module.scss";
 import Intro from "../components/Intro";
+import { products } from "../data/products";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
           <Intro />
         </div>
         <div className={styles.colourBlock}>
-          <ProductShowcase />
+          <ProductShowcase products={products} />
         </div>
         <div className={styles.whiteBlock}>
           <Jumbotron />

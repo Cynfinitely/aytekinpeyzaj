@@ -30,11 +30,11 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 ## TODO
 
 - [x] Update Blogs.
-- [ ] Improve productShowcase
+- [x] Improve productShowcase
 - [ ] time and date implementation
 - [ ] order calculations
 - [ ] Add product videos
-- [ ] Improve styling ( add Tailwind or improve SCSS)
+- [X] Improve styling ( add Tailwind or improve SCSS)
 - [ ] Add tests
 - [ ] Add order system
 - [ ] Code Maintainability rules
