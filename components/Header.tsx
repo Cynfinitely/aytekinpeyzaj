@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "../styles/Header.module.scss";
 import logo from "../public/logo.png";
 import Navbar from "./Navbar";
+import Cart from "./Cart";
 
 export default function Header() {
   return (
@@ -13,6 +14,8 @@ export default function Header() {
         </h1>
       </div>
       <Navbar />
+
+      <Cart />
     </header>
   );
 }

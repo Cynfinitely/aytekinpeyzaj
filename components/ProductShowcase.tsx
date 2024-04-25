@@ -2,8 +2,12 @@ import React from "react";
 import logo from "../public/logo.png";
 import Image from "next/image";
 import { IProductListProps } from "../interfaces";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../redux/features/cartSlice";
 
 const ProductShowcase = (props: IProductListProps) => {
+  const dispatch = useDispatch();
+
   return (
     <div>
       <div className="flex items-center justify-center">
@@ -37,7 +41,10 @@ const ProductShowcase = (props: IProductListProps) => {
                 </h2>
               </div>
               <div>
-                <button className="p-2 px-6 bg-purple-500 text-white rounded-md hover:bg-purple-600">
+                <button
+                  onClick={() => dispatch(addToCart(product))}
+                  className="p-2 px-6 bg-purple-500 text-white rounded-md hover:bg-purple-600"
+                >
                   Sepete Ekle
                 </button>
               </div>
