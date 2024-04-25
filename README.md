@@ -31,10 +31,11 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 
 - [x] Update Blogs.
 - [x] Improve productShowcase
+- [ ] Improve Add To Cart Logic & Errors
 - [ ] time and date implementation
 - [ ] order calculations
 - [ ] Add product videos
-- [X] Improve styling ( add Tailwind or improve SCSS)
+- [x] Improve styling ( add Tailwind or improve SCSS)
 - [ ] Add tests
 - [ ] Add order system
 - [ ] Code Maintainability rules
@@ -77,4 +78,3 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 - [ ] Phone app
 - [ ] Other domains Support
 - [ ] Add new media
-  
