@@ -5,6 +5,11 @@ import styles from "../styles/Home.module.scss";
 import Intro from "../components/Intro";
 import { useEffect, useState } from "react";
 import getProducts from "../API/products";
+import { useDispatch } from "react-redux";
+import { onAuthStateChanged } from "firebase/auth";
+import { auth } from "../firebase/firebase";
+import { setUser, signIn } from "../redux/features/authSlice";
+import { AppDispatch } from "../redux/store";
 
 export default function Home() {
   const [products, setProducts] = useState([]);
@@ -14,6 +19,19 @@ export default function Home() {
       setProducts(products);
     });
   }, []);
+
+  const dispatch: AppDispatch = useDispatch();
+
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      if (user) {
+        dispatch(setUser({ uid: user.uid, email: user.email }));
+      }
+    });
+
+    // Cleanup function to unsubscribe from the listener when the component is unmounted
+    return () => unsubscribe();
+  }, [dispatch]);
 
   return (
     <>
