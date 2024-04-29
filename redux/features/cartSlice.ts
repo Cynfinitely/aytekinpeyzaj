@@ -52,8 +52,6 @@ export const cartSlice = createSlice({
     },
     removeProduct: (state, action) => {
       let index = state.cartProducts.indexOf(action.payload);
-      console.log("ALOOOO", action.payload);
-      console.log("BROOO", index);
       state.cartTotalQuantity -= action.payload;
       state.cartProducts.splice(
         state.cartProducts.findIndex(
@@ -67,7 +65,7 @@ export const cartSlice = createSlice({
       }
     },
     cartProducts: () => {
-      console.log("CART WORKING!");
+      return initialCartState;
     },
   },
   extraReducers: (builder) => {},
