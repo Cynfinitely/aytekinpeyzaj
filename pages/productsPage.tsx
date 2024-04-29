@@ -1,19 +1,18 @@
-import React from "react";
-import { IProductListProps } from "../interfaces";
+import React, { useEffect, useState } from "react";
 import ProductList from "../components/ProductList";
 import { GetStaticProps } from "next";
-import { products } from "../data/products";
+import getProducts from "../API/products";
 
-const ProductsPage = ({ products }: IProductListProps) => {
+const ProductsPage = () => {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    getProducts().then((products) => {
+      setProducts(products);
+    });
+  }, []);
+
   return <ProductList products={products} />;
-};
-
-export const getStaticProps: GetStaticProps = async (context) => {
-  return {
-    props: {
-      products,
-    },
-  };
 };
 
 export default ProductsPage;

@@ -112,7 +112,7 @@ const Cart = () => {
                                 <li key={product.id} className="flex py-6">
                                   <div className="h-24 w-24 flex-shrink-0 overflow-hidden rounded-md border border-gray-200">
                                     <img
-                                      src={product.image.src}
+                                      src={product.image}
                                       alt={product.imageAlt}
                                       className="h-full w-full object-cover object-center"
                                     />

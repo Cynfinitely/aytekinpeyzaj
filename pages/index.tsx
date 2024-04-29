@@ -3,9 +3,18 @@ import InfoBanner from "../components/InfoBanner";
 import ProductShowcase from "../components/ProductShowcase";
 import styles from "../styles/Home.module.scss";
 import Intro from "../components/Intro";
-import { products } from "../data/products";
+import { useEffect, useState } from "react";
+import getProducts from "../API/products";
 
 export default function Home() {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    getProducts().then((products) => {
+      setProducts(products);
+    });
+  }, []);
+
   return (
     <>
       <div>

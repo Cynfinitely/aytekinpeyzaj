@@ -28,17 +28,13 @@ const ProductShowcase = (props: IProductListProps) => {
           {props.products.map((product, index) => (
             <section className="grid grid-rows-1 h-full p-5 py-10 bg-purple-50 text-black text-center transform duration-500 hover:-translate-y-2 cursor-pointer">
               <div>
-                <img src={product.image.src} alt="" />
+                <img src={product.image} alt="" />
                 <h1 className="text-3xl my-5">{product.name}</h1>
                 <p className="mb-5">{product.description}</p>
               </div>
               <div>
-                <h2 className="font-semibold mb-5">
-                  {product.liter.join("L / ")}L
-                </h2>
-                <h2 className="font-semibold mb-5">
-                  {product.price.join(" TL / ")} TL
-                </h2>
+                <h2 className="font-semibold mb-5">{product.liter}L</h2>
+                <h2 className="font-semibold mb-5">{product.price} TL</h2>
               </div>
               <div>
                 <button

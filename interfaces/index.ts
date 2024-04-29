@@ -8,11 +8,10 @@ export type User = {
 export interface IProduct {
   id: string;
   name: string;
-  liter: number[];
-  price: number[];
-  url: string;
+  liter: number;
+  price: number;
   description: string;
-  image: StaticImageData;
+  image: string;
 }
 
 export interface IProductProps {

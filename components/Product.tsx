@@ -12,23 +12,18 @@ const Product = (props: IProductProps) => {
       <div className={styles.product__image}>
         <Image
           src={props.product.image}
-          alt={props.product.image.src}
+          alt="product"
           width={327}
           height={420}
         />
       </div>
       <div className={styles.product__text}>
         <h1 className={styles.product__text__title}>{props.product.name}</h1>
-        <h2 className={styles.product__text__liter}>
-          {props.product.liter.join("L / ")}L
-        </h2>
+        <h2 className={styles.product__text__liter}>{props.product.liter}L</h2>
         <p className={styles.product__text__description}>
           {props.product.description}
         </p>
-        <p className={styles.product__text__price}>
-          {" "}
-          {props.product.price.join(" TL / ")} TL
-        </p>
+        <p className={styles.product__text__price}> {props.product.price} TL</p>
       </div>
     </div>
   );
