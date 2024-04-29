@@ -44,16 +44,22 @@ export default function Header() {
           </div>
         </>
       ) : (
-        <button>
-          <Link href="/signIn">
-            <button
-              onClick={handleSignOut}
-              className="py-2.5 px-6 rounded-lg text-sm font-medium text-white bg-teal-600"
-            >
-              Giriş Yap
-            </button>
-          </Link>
-        </button>
+        <div className="flex gap-4">
+          <button>
+            <Link href="/signIn">
+              <button className="py-2.5 px-6 rounded-lg text-sm font-medium text-white bg-teal-400">
+                Giriş Yap
+              </button>
+            </Link>
+          </button>
+          <button>
+            <Link href="/signUp">
+              <button className="py-2.5 px-6 rounded-lg text-sm font-medium text-white bg-teal-500">
+                Kayıt Ol
+              </button>
+            </Link>
+          </button>
+        </div>
       )}
     </header>
   );

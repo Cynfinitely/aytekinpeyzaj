@@ -2,15 +2,18 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { signUp } from "../redux/features/authSlice";
 import { AppDispatch } from "../redux/store";
+import { useRouter } from "next/router";
 
 function SignUp() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const dispatch: AppDispatch = useDispatch();
+  const router = useRouter();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    dispatch(signUp({ email, password }));
+    await dispatch(signUp({ email, password }));
+    router.push("/");
   };
 
   return (
