@@ -31,6 +31,7 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 
 - [x] Update Blogs.
 - [x] Improve productShowcase
+- [ ] Search payment solutions for Turkey
 - [ ] Improve Add To Cart Logic & Errors
 - [ ] time and date implementation
 - [ ] order calculations
@@ -39,7 +40,7 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 - [ ] Add tests
 - [ ] Add order system
 - [ ] Code Maintainability rules
-- [X] Backend prep
+- [x] Backend prep
 - [ ] User System
 - [ ] Semantic & accessibility
 - [ ] Dependency Injection
