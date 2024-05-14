@@ -45,20 +45,17 @@ export default function Header() {
         </>
       ) : (
         <div className="flex gap-4">
-          <button>
-            <Link href="/signIn">
-              <button className="py-2.5 px-6 rounded-lg text-sm font-medium text-white bg-teal-400">
-                Giriş Yap
-              </button>
-            </Link>
-          </button>
-          <button>
-            <Link href="/signUp">
-              <button className="py-2.5 px-6 rounded-lg text-sm font-medium text-white bg-teal-500">
-                Kayıt Ol
-              </button>
-            </Link>
-          </button>
+          <Link href="/signIn">
+            <button className="py-2.5 px-6 rounded-lg text-sm font-medium text-white bg-teal-400">
+              Giriş Yap
+            </button>
+          </Link>
+
+          <Link href="/signUp">
+            <button className="py-2.5 px-6 rounded-lg text-sm font-medium text-white bg-teal-500">
+              Kayıt Ol
+            </button>
+          </Link>
         </div>
       )}
     </header>
