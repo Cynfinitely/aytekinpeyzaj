@@ -6,7 +6,14 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#dcf2e8",
+      },
+      backgroundImage: {
+        vectorGrass: "url('/vectorGrass.png')",
+      },
+    },
   },
   plugins: [],
 };

@@ -1,63 +1,19 @@
 import Image from "next/image";
-import styles from "../styles/Header.module.scss";
 import logo from "../public/logo.png";
-import Navbar from "./Navbar";
-import Cart from "./Cart";
-import { AppDispatch, RootState } from "../redux/store";
-import { useDispatch, useSelector } from "react-redux";
-import Link from "next/link";
-import { signOut } from "../redux/features/authSlice";
 
 export default function Header() {
-  const user = useSelector((state: RootState) => state.auth.user);
-  const dispatch: AppDispatch = useDispatch();
-
-  const handleSignOut = () => {
-    dispatch(signOut());
-  };
-
-  const username = user?.email.split("@")[0];
-
   return (
-    <header className={styles.header}>
-      <div className={styles.header__logo}>
-        <Image src={logo} alt="" width="56" height="56" />
-        <h1 className={styles.header__title}>
-          Aytekin <br /> Peyzaj
+    <header className="w-full flex items-center py-6 bg-primary text-white bg-bottom bg-repeat-x bg-vectorGrass relative">
+      <div className="absolute left-4 hidden md:block">
+        <p>SİPARİŞ İÇİN</p>
+        <p className="font-bold  text-2xl">+90 539 339 63 04</p>
+      </div>
+
+      <div className="flex w-full items-center justify-center">
+        <h1 className="p-0 text-4xl md:text-6xl font-bold text-bold m-0 ml-1 flex items-center">
+          Aytekin <Image src={logo} alt="" width="56" height="56" /> Peyzaj
         </h1>
       </div>
-      <Navbar />
-      {user ? (
-        <>
-          <div className="flex justify-center items-center gap-7">
-            <div className="flex justify-center items-center">
-              <p className="hidden md:block">Hoşgeldiniz, {username}</p>
-              <Cart />
-            </div>
-
-            <button
-              onClick={handleSignOut}
-              className="py-2.5 px-6 rounded-lg text-sm font-medium bg-teal-200 text-teal-800"
-            >
-              Çıkış Yap
-            </button>
-          </div>
-        </>
-      ) : (
-        <div className="flex gap-4">
-          <Link href="/signIn">
-            <button className="py-2.5 px-6 rounded-lg text-sm font-medium text-white bg-teal-400">
-              Giriş Yap
-            </button>
-          </Link>
-
-          <Link href="/signUp">
-            <button className="py-2.5 px-6 rounded-lg text-sm font-medium text-white bg-teal-500">
-              Kayıt Ol
-            </button>
-          </Link>
-        </div>
-      )}
     </header>
   );
 }

@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import { Provider } from "react-redux";
 import store from "../redux/store";
 import Head from "next/head";
+import Navbar from "../components/Navbar";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -14,6 +15,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
       <div className="app">
         <Header />
+        <Navbar />
         <main className="main-content">
           <Component {...pageProps} />
         </main>
