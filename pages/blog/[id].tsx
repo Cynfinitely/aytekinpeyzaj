@@ -1,6 +1,5 @@
 import { useRouter } from "next/router";
 import { blogs } from "../../data/blog";
-import styles from "../../styles/BlogDetail.module.scss";
 
 const BlogPost = () => {
   const router = useRouter();
@@ -12,15 +11,15 @@ const BlogPost = () => {
   }
 
   return (
-    <div className={styles.blog}>
-      <h2 className={styles.blog__title}>{blog.title}</h2>
+    <div className="flex flex-col items-center justify-center">
+      <h2 className="text-2xl font-bold mb-4">{blog.title}</h2>
       <img
         src={blog.imageUrl}
         alt={blog.title}
-        className={styles.blog__image}
+        className="w-full h-auto rounded-lg"
       />
       <div
-        className={styles.blog__text}
+        className="mt-4"
         dangerouslySetInnerHTML={{ __html: blog.text }}
       />
     </div>
