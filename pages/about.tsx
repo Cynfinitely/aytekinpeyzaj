@@ -1,9 +1,8 @@
 import React from "react";
-import styles from "../styles/About.module.scss";
 
 const about = () => {
   return (
-    <div className={styles.container}>
+    <div className="flex-1 flex flex-col justify-center items-center p-6">
       <h1>Hakkımızda</h1>
       <p>
         Firmamız 2020 yılından bu yana üretim, işleme, pazarlama ve satış
