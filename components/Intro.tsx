@@ -1,9 +1,8 @@
 import React from "react";
-import styles from "../styles/Intro.module.scss";
 
 const Intro = () => {
   return (
-    <div className={styles.introContainer}>
+    <div className="p-2 min-h-[50vh] flex flex-col justify-end items-end text-white italic text-[27px] font-bold tracking-tighter leading-none text-center">
       <h3>
         Toprağa hayat,<strong>hayata değer</strong> katar.
       </h3>
