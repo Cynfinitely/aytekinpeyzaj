@@ -1,15 +1,13 @@
 import Image from "next/image";
-import styles from "../styles/Product.module.scss";
-import { IProductProps } from "../interfaces";
 
-const Product = (props: IProductProps) => {
+const Product = (props) => {
   if (!props.product) {
     return null;
   }
 
   return (
-    <div className={styles.product}>
-      <div className={styles.product__image}>
+    <div className="grid grid-cols-2 grid-rows-auto gap-5 mb-5 border-2 border-red-500 bg-gradient-to-r from-red-200 to-red-100 rounded-lg shadow-lg">
+      <div className="grid-area-image w-full h-auto">
         <Image
           src={props.product.image}
           alt="product"
@@ -17,13 +15,11 @@ const Product = (props: IProductProps) => {
           height={420}
         />
       </div>
-      <div className={styles.product__text}>
-        <h1 className={styles.product__text__title}>{props.product.name}</h1>
-        <h2 className={styles.product__text__liter}>{props.product.liter}L</h2>
-        <p className={styles.product__text__description}>
-          {props.product.description}
-        </p>
-        <p className={styles.product__text__price}> {props.product.price} TL</p>
+      <div className="grid-area-text flex flex-col justify-center items-start">
+        <h1 className="text-3xl mb-2">{props.product.name}</h1>
+        <h2 className="text-xl mb-2">{props.product.liter}L</h2>
+        <p className="mb-2">{props.product.description}</p>
+        <p className="text-xl text-red-500"> {props.product.price} TL</p>
       </div>
     </div>
   );
