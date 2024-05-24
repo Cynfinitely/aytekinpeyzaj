@@ -12,6 +12,8 @@ module.exports = {
       },
       backgroundImage: {
         vectorGrass: "url('/vectorGrass.png')",
+        soil: "url('/soil.png')",
+        flowers: "url('/flowersBG.png')"
       },
     },
   },

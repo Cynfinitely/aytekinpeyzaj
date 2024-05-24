@@ -1,7 +1,6 @@
 import Jumbotron from "../components/Jumbotron";
 import InfoBanner from "../components/InfoBanner";
 import ProductShowcase from "../components/ProductShowcase";
-import styles from "../styles/Home.module.scss";
 import Intro from "../components/Intro";
 import { useEffect, useState } from "react";
 import getProducts from "../API/products";
@@ -36,13 +35,13 @@ export default function Home() {
   return (
     <>
       <div>
-        <div className={styles.whiteBlock}>
+        <div className="bg-flowers bg-no-repeat bg-center bg-cover bg-fixed w-full p-4 text-green-700 border-black border-t-5 border-r-5 border-b-5">
           <Intro />
         </div>
-        <div className={styles.colourBlock}>
+        <div className="bg-soil bg-no-repeat bg-center bg-cover bg-fixed w-full p-4 text-white">
           <ProductShowcase products={products} />
         </div>
-        <div className={styles.whiteBlock}>
+        <div className="bg-flowers bg-no-repeat bg-center bg-cover bg-fixed w-full p-4 text-green-700 border-black border-t-5 border-r-5 border-b-5">
           <Jumbotron />
         </div>
         <InfoBanner />
