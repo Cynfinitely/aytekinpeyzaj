@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       colors: {
         primary: "#dcf2e8",
+        third: '#04bf9d',
       },
       backgroundImage: {
         vectorGrass: "url('/vectorGrass.png')",
