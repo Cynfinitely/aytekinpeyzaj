@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import ProductList from "../components/ProductList";
-import { GetStaticProps } from "next";
 import getProducts from "../API/products";
 
 const ProductsPage = () => {
