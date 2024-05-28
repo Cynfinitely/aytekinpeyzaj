@@ -1,7 +1,5 @@
-import { useEffect } from "react";
+import { useEffect, useState, Fragment, useCallback } from "react";
 import { useDispatch, useSelector } from "react-redux";
-
-import { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 
 import { AppDispatch, RootState } from "../redux/store";
@@ -14,14 +12,14 @@ const Cart = () => {
 
   useEffect(() => {
     dispatch(getTotals(CartProducts));
-  }, [CartProducts]);
+  }, [CartProducts, dispatch]);
 
-  const handleCart = () => {
+  const handleCart = useCallback(() => {
     setOpen(true);
-  };
+  }, []);
 
   return (
-    <div>
+    <nav>
       <div>
         <ul className="flex flex-col  m-2 border-bottom ">
           <div onClick={handleCart} className="flex  ">
@@ -87,6 +85,7 @@ const Cart = () => {
                               type="button"
                               className="-m-2 p-2 text-gray-400 hover:text-gray-500"
                               onClick={() => setOpen(false)}
+                              aria-label="Close panel"
                             >
                               <span className="sr-only">Close panel</span>
                             </button>
@@ -133,6 +132,7 @@ const Cart = () => {
                                           onClick={() =>
                                             dispatch(removeProduct(product))
                                           }
+                                          aria-label="Remove product"
                                         >
                                           Ürünü Kaldır
                                         </button>
@@ -169,6 +169,7 @@ const Cart = () => {
                               type="button"
                               className="font-medium text-indigo-600 hover:text-indigo-500"
                               onClick={() => setOpen(false)}
+                              aria-label="Continue shopping"
                             >
                               Alışverişe Devam Et
                               <span aria-hidden="true"> &rarr;</span>
@@ -184,7 +185,7 @@ const Cart = () => {
           </div>
         </Dialog>
       </Transition.Root>
-    </div>
+    </nav>
   );
 };
 
