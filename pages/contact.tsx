@@ -4,7 +4,7 @@ import Image from "next/image";
 const contact = () => {
   return (
     <div className="flex flex-col items-center justify-center w-full h-full p-6">
-      <h1>Bize bu numaralardan whatsapp aracılığıyla ulaşabilirsiniz:</h1>
+      <h1>Bize bu numaralardan Whatsapp aracılığıyla ulaşabilirsiniz:</h1>
       <div className="flex justify-evenly items-center w-1/2 gap-12">
         <Image src="/whatsapp.png" alt="phone" width={50} height={50} />
         <p className="font-bold text-4xl">
